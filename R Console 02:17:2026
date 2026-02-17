@@ -1,0 +1,368 @@
+
+R version 4.5.2 (2025-10-31) -- "[Not] Part in a Rumble"
+Copyright (C) 2025 The R Foundation for Statistical Computing
+Platform: aarch64-apple-darwin20
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+[R.app GUI 1.82 (8556) aarch64-apple-darwin20]
+
+[Workspace restored from /Users/mercedesmcdaniel/.RData]
+[History restored from /Users/mercedesmcdaniel/.Rapp.history]
+
+> library("ggubr")
+Error in library("ggubr") : there is no package called ‘ggubr’
+> my_data <- mtcars
+> my_data
+                     mpg cyl  disp  hp drat    wt  qsec vs am gear carb
+Mazda RX4           21.0   6 160.0 110 3.90 2.620 16.46  0  1    4    4
+Mazda RX4 Wag       21.0   6 160.0 110 3.90 2.875 17.02  0  1    4    4
+Datsun 710          22.8   4 108.0  93 3.85 2.320 18.61  1  1    4    1
+Hornet 4 Drive      21.4   6 258.0 110 3.08 3.215 19.44  1  0    3    1
+Hornet Sportabout   18.7   8 360.0 175 3.15 3.440 17.02  0  0    3    2
+Valiant             18.1   6 225.0 105 2.76 3.460 20.22  1  0    3    1
+Duster 360          14.3   8 360.0 245 3.21 3.570 15.84  0  0    3    4
+Merc 240D           24.4   4 146.7  62 3.69 3.190 20.00  1  0    4    2
+Merc 230            22.8   4 140.8  95 3.92 3.150 22.90  1  0    4    2
+Merc 280            19.2   6 167.6 123 3.92 3.440 18.30  1  0    4    4
+Merc 280C           17.8   6 167.6 123 3.92 3.440 18.90  1  0    4    4
+Merc 450SE          16.4   8 275.8 180 3.07 4.070 17.40  0  0    3    3
+Merc 450SL          17.3   8 275.8 180 3.07 3.730 17.60  0  0    3    3
+Merc 450SLC         15.2   8 275.8 180 3.07 3.780 18.00  0  0    3    3
+Cadillac Fleetwood  10.4   8 472.0 205 2.93 5.250 17.98  0  0    3    4
+Lincoln Continental 10.4   8 460.0 215 3.00 5.424 17.82  0  0    3    4
+Chrysler Imperial   14.7   8 440.0 230 3.23 5.345 17.42  0  0    3    4
+Fiat 128            32.4   4  78.7  66 4.08 2.200 19.47  1  1    4    1
+Honda Civic         30.4   4  75.7  52 4.93 1.615 18.52  1  1    4    2
+Toyota Corolla      33.9   4  71.1  65 4.22 1.835 19.90  1  1    4    1
+Toyota Corona       21.5   4 120.1  97 3.70 2.465 20.01  1  0    3    1
+Dodge Challenger    15.5   8 318.0 150 2.76 3.520 16.87  0  0    3    2
+AMC Javelin         15.2   8 304.0 150 3.15 3.435 17.30  0  0    3    2
+Camaro Z28          13.3   8 350.0 245 3.73 3.840 15.41  0  0    3    4
+Pontiac Firebird    19.2   8 400.0 175 3.08 3.845 17.05  0  0    3    2
+Fiat X1-9           27.3   4  79.0  66 4.08 1.935 18.90  1  1    4    1
+Porsche 914-2       26.0   4 120.3  91 4.43 2.140 16.70  0  1    5    2
+Lotus Europa        30.4   4  95.1 113 3.77 1.513 16.90  1  1    5    2
+Ford Pantera L      15.8   8 351.0 264 4.22 3.170 14.50  0  1    5    4
+Ferrari Dino        19.7   6 145.0 175 3.62 2.770 15.50  0  1    5    6
+Maserati Bora       15.0   8 301.0 335 3.54 3.570 14.60  0  1    5    8
+Volvo 142E          21.4   4 121.0 109 4.11 2.780 18.60  1  1    4    2
+> ggscatter(my_data, x = "mpg", y = "wt", add = "reg.line", conf.int = TRUE, cor.coef = TRUE, cor.method = "pearson", xlab = "Miles/(US) gallon", ylab = "Weight (1000 lbs)")
+Error in ggscatter(my_data, x = "mpg", y = "wt", add = "reg.line", conf.int = TRUE,  : 
+  could not find function "ggscatter"
+> ggscatter(my_data, x = "mpg", y = "wt", add = "reg.line", conf.int = TRUE, cor.coef = TRUE, cor.method = "pearson", xlab = "Miles/(US) gallon", ylab = "Weight (1000 lbs)")
+Error in ggscatter(my_data, x = "mpg", y = "wt", add = "reg.line", conf.int = TRUE,  : 
+  could not find function "ggscatter"
+> library("ggpubu")
+Error in library("ggpubu") : there is no package called ‘ggpubu’
+> install.packages("ggpubr")
+--- Please select a CRAN mirror for use in this session ---
+Error in if (res > 0L) { : argument is of length zero
+>  install.packages("ggpubr")
+--- Please select a CRAN mirror for use in this session ---
+also installing the dependencies ‘colorspace’, ‘fracdiff’, ‘lmtest’, ‘timeDate’, ‘urca’, ‘zoo’, ‘RcppArmadillo’, ‘Deriv’, ‘forecast’, ‘modelr’, ‘microbenchmark’, ‘rbibutils’, ‘numDeriv’, ‘doBy’, ‘SparseM’, ‘MatrixModels’, ‘minqa’, ‘nloptr’, ‘reformulas’, ‘Rdpack’, ‘RcppEigen’, ‘stringi’, ‘utf8’, ‘backports’, ‘carData’, ‘abind’, ‘Formula’, ‘pbkrtest’, ‘quantreg’, ‘lme4’, ‘cli’, ‘gtable’, ‘isoband’, ‘lifecycle’, ‘S7’, ‘vctrs’, ‘withr’, ‘Rcpp’, ‘stringr’, ‘tidyselect’, ‘cpp11’, ‘generics’, ‘pillar’, ‘R6’, ‘farver’, ‘labeling’, ‘RColorBrewer’, ‘viridisLite’, ‘broom’, ‘corrplot’, ‘car’, ‘pkgconfig’, ‘ggplot2’, ‘ggrepel’, ‘ggsci’, ‘tidyr’, ‘purrr’, ‘dplyr’, ‘cowplot’, ‘ggsignif’, ‘scales’, ‘gridExtra’, ‘glue’, ‘polynom’, ‘rlang’, ‘rstatix’, ‘tibble’, ‘magrittr’
+
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/colorspace_2.1-2.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/fracdiff_1.5-3.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/lmtest_0.9-40.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/timeDate_4052.112.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/urca_1.3-4.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/zoo_1.8-15.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/RcppArmadillo_15.2.3-1.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/Deriv_4.2.0.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/forecast_9.0.1.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/modelr_0.1.11.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/microbenchmark_1.5.0.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/rbibutils_2.4.1.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/numDeriv_2016.8-1.1.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/doBy_4.7.1.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/SparseM_1.84-2.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/MatrixModels_0.5-4.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/minqa_1.2.8.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/nloptr_2.2.1.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/reformulas_0.4.4.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/Rdpack_2.6.6.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/RcppEigen_0.3.4.0.2.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/stringi_1.8.7.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/utf8_1.2.6.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/backports_1.5.0.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/carData_3.0-6.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/abind_1.4-8.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/Formula_1.2-5.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/pbkrtest_0.5.5.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/quantreg_6.1.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/lme4_1.1-38.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/cli_3.6.5.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/gtable_0.3.6.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/isoband_0.3.0.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/lifecycle_1.0.5.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/S7_0.2.1.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/vctrs_0.7.1.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/withr_3.0.2.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/Rcpp_1.1.1.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/stringr_1.6.0.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/tidyselect_1.2.1.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/cpp11_0.5.3.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/generics_0.1.4.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/pillar_1.11.1.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/R6_2.6.1.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/farver_2.1.2.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/labeling_0.4.3.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/RColorBrewer_1.1-3.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/viridisLite_0.4.3.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/broom_1.0.12.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/corrplot_0.95.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/car_3.1-5.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/pkgconfig_2.0.3.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/ggplot2_4.0.2.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/ggrepel_0.9.6.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/ggsci_4.2.0.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/tidyr_1.3.2.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/purrr_1.2.1.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/dplyr_1.2.0.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/cowplot_1.2.0.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/ggsignif_0.6.4.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/scales_1.4.0.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/gridExtra_2.3.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/glue_1.8.0.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/polynom_1.4-1.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/rlang_1.1.7.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/rstatix_0.7.3.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/tibble_3.3.1.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/magrittr_2.0.4.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/ggpubr_0.6.2.tgz'
+Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
+  download of package ‘doBy’ failed
+Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
+  download of package ‘RcppEigen’ failed
+Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
+  download of package ‘stringi’ failed
+Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
+  download of package ‘lme4’ failed
+Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
+  download of package ‘Rcpp’ failed
+Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
+  download of package ‘corrplot’ failed
+Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
+  download of package ‘ggplot2’ failed
+
+The downloaded binary packages are in
+	/var/folders/2c/jbg2q4r90_7ccgjz4wbrls300000gn/T//RtmpjH7Iap/downloaded_packages
+Warning messages:
+1: In download.file(urls, destfiles, "libcurl", mode = "wb", ...) :
+  URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/doBy_4.7.1.tgz': Timeout of 60 seconds was reached
+2: In download.file(urls, destfiles, "libcurl", mode = "wb", ...) :
+  URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/stringi_1.8.7.tgz': Timeout of 60 seconds was reached
+3: In download.file(urls, destfiles, "libcurl", mode = "wb", ...) :
+  URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/lme4_1.1-38.tgz': Timeout of 60 seconds was reached
+4: In download.file(urls, destfiles, "libcurl", mode = "wb", ...) :
+  URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/Rcpp_1.1.1.tgz': Timeout of 60 seconds was reached
+5: In download.file(urls, destfiles, "libcurl", mode = "wb", ...) :
+  URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/RcppEigen_0.3.4.0.2.tgz': Timeout of 60 seconds was reached
+6: In download.file(urls, destfiles, "libcurl", mode = "wb", ...) :
+  URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/ggplot2_4.0.2.tgz': Timeout of 60 seconds was reached
+7: In download.file(urls, destfiles, "libcurl", mode = "wb", ...) :
+  URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/corrplot_0.95.tgz': Timeout of 60 seconds was reached
+8: In download.file(urls, destfiles, "libcurl", mode = "wb", ...) :
+  some files were not downloaded
+
+library("ggpubu")
+> install.packages("ggpubr")
+>  install.packages("ggpubr")
+install.packages("ggpubr")
+
+> 
+> 
+> 
+> library("ggpubu")
+Error in library("ggpubu") : there is no package called ‘ggpubu’
+> 
+> library("ggpubu")
+Error in library("ggpubu") : there is no package called ‘ggpubu’
+> install.packages("ggpubr")
+also installing the dependency ‘ggplot2’
+
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/ggplot2_4.0.2.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/ggpubr_0.6.2.tgz'
+Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
+  download of package ‘ggplot2’ failed
+
+The downloaded binary packages are in
+	/var/folders/2c/jbg2q4r90_7ccgjz4wbrls300000gn/T//RtmpjH7Iap/downloaded_packages
+Warning messages:
+1: In download.file(urls, destfiles, "libcurl", mode = "wb", ...) :
+  URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/ggplot2_4.0.2.tgz': Timeout of 60 seconds was reached
+2: In download.file(urls, destfiles, "libcurl", mode = "wb", ...) :
+  some files were not downloaded
+> 
+> library("ggpubu")
+Error in library("ggpubu") : there is no package called ‘ggpubu’
+> > install.packages("ggpubr")
+Error: unexpected '>' in ">"
+> 
+> 
+> library("ggpubu")
+Error in library("ggpubu") : there is no package called ‘ggpubu’
+> > install.packages("ggpubr")
+Error: unexpected '>' in ">"
+> >  install.packages("ggpubr")
+Error: unexpected '>' in ">"
+> 
+> 
+> library("ggpubu")
+Error in library("ggpubu") : there is no package called ‘ggpubu’
+> > install.packages("ggpubr")
+Error: unexpected '>' in ">"
+> >  install.packages("ggpubr")
+Error: unexpected '>' in ">"
+> install.packages("ggpubr")
+also installing the dependency ‘ggplot2’
+
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/ggplot2_4.0.2.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/ggpubr_0.6.2.tgz'
+Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
+  download of package ‘ggplot2’ failed
+
+The downloaded binary packages are in
+	/var/folders/2c/jbg2q4r90_7ccgjz4wbrls300000gn/T//RtmpjH7Iap/downloaded_packages
+Warning messages:
+1: In download.file(urls, destfiles, "libcurl", mode = "wb", ...) :
+  URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/ggplot2_4.0.2.tgz': Timeout of 60 seconds was reached
+2: In download.file(urls, destfiles, "libcurl", mode = "wb", ...) :
+  some files were not downloaded
+> 
+also installing the dependencies ‘crayon’, ‘fs’, ‘pkgbuild’, ‘rprojroot’, ‘diffobj’, ‘evaluate’, ‘highr’, ‘xfun’, ‘yaml’, ‘brio’, ‘callr’, ‘desc’, ‘jsonlite’, ‘pkgload’, ‘praise’, ‘processx’, ‘ps’, ‘waldo’, ‘ggplot2’, ‘knitr’, ‘testthat’
+
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/crayon_1.5.3.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/fs_1.6.6.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/pkgbuild_1.4.8.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/rprojroot_2.1.1.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/diffobj_0.3.6.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/evaluate_1.0.5.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/highr_0.11.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/xfun_0.56.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/yaml_2.3.12.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/brio_1.1.5.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/callr_3.7.6.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/desc_1.4.3.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/jsonlite_2.0.0.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/pkgload_1.5.0.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/praise_1.0.0.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/processx_3.8.6.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/ps_1.9.1.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/waldo_0.6.2.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/ggplot2_4.0.2.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/knitr_1.51.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/testthat_3.3.2.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/ggpubr_0.6.2.tgz'
+Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
+  download of package ‘ggplot2’ failed
+
+The downloaded binary packages are in
+	/var/folders/2c/jbg2q4r90_7ccgjz4wbrls300000gn/T//RtmpjH7Iap/downloaded_packages
+> library("ggpubu")
+Error in library("ggpubu") : there is no package called ‘ggpubu’
+In addition: Warning messages:
+1: In download.file(urls, destfiles, "libcurl", mode = "wb", ...) :
+  URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/ggplot2_4.0.2.tgz': Timeout of 60 seconds was reached
+2: In download.file(urls, destfiles, "libcurl", mode = "wb", ...) :
+  some files were not downloaded
+> library("ggpubr")
+Error: package ‘ggplot2’ required by ‘ggpubr’ could not be found
+also installing the dependencies ‘sys’, ‘rappdirs’, ‘askpass’, ‘cachem’, ‘memoise’, ‘sass’, ‘proxy’, ‘lazyeval’, ‘curl’, ‘mime’, ‘openssl’, ‘checkmate’, ‘fastmap’, ‘bslib’, ‘fontawesome’, ‘jquerylib’, ‘tinytex’, ‘Rcpp’, ‘e1071’, ‘wk’, ‘digest’, ‘rex’, ‘httr’, ‘data.table’, ‘htmlTable’, ‘htmltools’, ‘base64enc’, ‘rmarkdown’, ‘mvtnorm’, ‘TH.data’, ‘sandwich’, ‘htmlwidgets’, ‘later’, ‘rstudioapi’, ‘systemfonts’, ‘textshaping’, ‘brew’, ‘commonmark’, ‘stringi’, ‘classInt’, ‘DBI’, ‘s2’, ‘units’, ‘covr’, ‘ggplot2movies’, ‘hexbin’, ‘Hmisc’, ‘hms’, ‘mapproj’, ‘maps’, ‘multcomp’, ‘munsell’, ‘profvis’, ‘quarto’, ‘ragg’, ‘roxygen2’, ‘sf’, ‘svglite’, ‘vdiffr’, ‘xml2’
+
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/sys_3.4.3.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/rappdirs_0.3.4.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/askpass_1.2.1.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/cachem_1.1.0.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/memoise_2.0.1.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/sass_0.4.10.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/proxy_0.4-29.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/lazyeval_0.2.2.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/curl_7.0.0.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/mime_0.13.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/openssl_2.3.4.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/checkmate_2.3.4.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/fastmap_1.2.0.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/bslib_0.10.0.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/fontawesome_0.5.3.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/jquerylib_0.1.4.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/tinytex_0.58.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/Rcpp_1.1.1.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/e1071_1.7-17.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/wk_0.9.5.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/digest_0.6.39.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/rex_1.2.1.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/httr_1.4.8.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/data.table_1.18.2.1.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/htmlTable_2.4.3.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/htmltools_0.5.9.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/base64enc_0.1-6.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/rmarkdown_2.30.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/mvtnorm_1.3-3.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/TH.data_1.1-5.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/sandwich_3.1-1.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/htmlwidgets_1.6.4.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/later_1.4.6.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/rstudioapi_0.18.0.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/systemfonts_1.3.1.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/textshaping_1.0.4.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/brew_1.0-10.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/commonmark_2.0.0.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/stringi_1.8.7.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/classInt_0.4-11.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/DBI_1.2.3.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/s2_1.1.9.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/units_1.0-0.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/covr_3.6.5.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/ggplot2movies_0.0.1.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/hexbin_1.28.5.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/Hmisc_5.2-5.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/hms_1.1.4.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/mapproj_1.2.12.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/maps_3.4.3.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/multcomp_1.4-29.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/munsell_0.5.1.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/profvis_0.4.0.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/quarto_1.5.1.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/ragg_1.5.0.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/roxygen2_7.3.3.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/sf_1.0-24.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/svglite_2.2.2.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/vdiffr_1.0.9.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/xml2_1.5.2.tgz'
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/ggplot2_4.0.2.tgz'
+Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
+  download of package ‘bslib’ failed
+Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
+  download of package ‘TH.data’ failed
+Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
+  download of package ‘systemfonts’ failed
+Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
+  download of package ‘textshaping’ failed
+Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
+  download of package ‘stringi’ failed
+Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
+  download of package ‘s2’ failed
+Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
+  download of package ‘ragg’ failed
+Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
+  download of package ‘sf’ failed
+Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
+  download of package ‘ggplot2’ failed
+
+The downloaded binary packages are in
+	/var/folders/2c/jbg2q4r90_7ccgjz4wbrls300000gn/T//RtmpjH7Iap/downloaded_packages
+> 
